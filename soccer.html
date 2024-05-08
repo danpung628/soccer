@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>play soccer</title>
+	<link rel="stylesheet" type="text/css" href="soccer.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="soccer.js"></script>
+</head>
+<body>
+	<div id="main-div">
+		<div id="info">
+			<div id="our-team"></div>
+			<div id="enemy-team"></div>
+			<div id="timer">남은 시간 : 90m</div>
+		</div>
+
+		<div id="canvas-wrapper">
+			<div id="before-start">
+				<div class="wooden-btn" id="before-start-btn">PLAY</div>
+			</div>
+				<canvas id="brick-board" width="500" height="800"></canvas>
+				<div id="button-container">
+					<div id="start-btn" class="main-btn wooden-btn">START</div>
+					<div id="option-btn" class="main-btn wooden-btn">SETTINGS</div>
+				</div>
+
+
+				<div id="select-stage" class="popup">
+					<div class="wooden-btn" id="stage1" class="stage-select">Stage 1</div>
+					<div class="wooden-btn" id="stage2" class="stage-select">Stage 2</div>
+					<div class="wooden-btn" id="stage3" class="stage-select">Stage 3</div>
+					<div class="wooden-btn back">BACK</div>
+				</div>
+
+				<div id="settings" class="popup">
+					<div>SETTINGS</div>
+					<div class="setting-item">
+						<div class="setting-name">Character</div>
+						<div class="character">
+							<img class="bird" id="redbird" src="src/red.png" width="50"></div>
+						<div class="character">
+							<img class="bird" id="bluebird" src="src/blue.png" width="50"></div>
+						<div class="character">
+							<img class="bird" id="yellowbird" src="src/yellow.png" width="50"></div>
+					</div>
+					<div class="setting-item">
+						<div class="setting-name">BGM Volume</div>
+						<input type="range" min="0" max="100" value="50" class="slider" id="bgm-volume">
+					</div>
+					<div class="setting-item">
+						<div class="setting-name">FX Volume</div>
+						<input type="range" min="0" max="100" value="50" class="slider" id="sfx-volume">
+					</div>
+					<div class="back wooden-btn">OK</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
